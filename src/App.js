@@ -69,7 +69,7 @@ function App() {
     <div className="App">
       <h1>EMI CALCULATOR</h1>
       <br></br>
-      <br></br>
+
       <TextInput title="Enter the Total Cost" state={cost} setState={setCost} />
       <TextInput
         title="Enter the Interest rate"
@@ -120,10 +120,7 @@ function App() {
           Total Loan Amount : {(Number(tenure) * Number(emi)).toFixed(2)}
         </span>
       )}
-      <br></br>
-      <br></br>
-      <br />
-      <br />
+
       <div className="tenure-container">
         {data.map((ele, index) => {
           return (
